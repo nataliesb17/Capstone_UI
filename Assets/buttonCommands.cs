@@ -14,6 +14,8 @@ public class buttonCommands : MonoBehaviour
 	
 	public GameObject settingsCanvas;
 	
+	public Animator anime;
+	
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +39,7 @@ public class buttonCommands : MonoBehaviour
 	}
 	
 	public void pressMe() {
-		mainButton.SetActive(false);
+		anime.SetTrigger("ifPressed");
 		
 		buttonOne.SetActive(true);
 		buttonTwo.SetActive(true);

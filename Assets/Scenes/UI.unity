@@ -309,6 +309,7 @@ MonoBehaviour:
   buttonThree: {fileID: 548062829}
   buttonFour: {fileID: 1586026987}
   settingsCanvas: {fileID: 0}
+  anime: {fileID: 900885344}
 --- !u!4 &367663821
 Transform:
   m_ObjectHideFlags: 0
@@ -342,7 +343,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &548062830
 RectTransform:
   m_ObjectHideFlags: 0
@@ -545,7 +546,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &580829798
 RectTransform:
   m_ObjectHideFlags: 0
@@ -950,6 +951,8 @@ GameObject:
   - component: {fileID: 900885342}
   - component: {fileID: 900885341}
   - component: {fileID: 900885340}
+  - component: {fileID: 900885345}
+  - component: {fileID: 900885344}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1039,6 +1042,37 @@ RectTransform:
   m_AnchoredPosition: {x: 506, y: 209}
   m_SizeDelta: {x: 1012, y: 418}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &900885344
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900885339}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd91ff52cf703ff479f941e3b72e0e33, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!225 &900885345
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900885339}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &945774712
 GameObject:
   m_ObjectHideFlags: 0
@@ -1240,6 +1274,7 @@ GameObject:
   - component: {fileID: 1197537739}
   - component: {fileID: 1197537738}
   - component: {fileID: 1197537737}
+  - component: {fileID: 1197537740}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -1330,6 +1365,25 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1197537740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197537735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aaf960227867044282d921171d2d7ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  pointer: {fileID: 1467022664}
+  sortOrder: 0
 --- !u!1 &1277390535
 GameObject:
   m_ObjectHideFlags: 0
@@ -1348,7 +1402,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1277390536
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1571,7 +1625,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1586026988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1851,7 +1905,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2145813376
 RectTransform:
   m_ObjectHideFlags: 0
