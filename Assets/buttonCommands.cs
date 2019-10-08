@@ -12,9 +12,9 @@ public class buttonCommands : MonoBehaviour
 	public GameObject buttonThree;
 	public GameObject buttonFour;
 	
-	public GameObject settingsCanvas;
-	
 	public Animator anime;
+	public Animator animeFour;
+	public Animator settings;
 	
     // Start is called before the first frame update
     void Start()
@@ -23,7 +23,12 @@ public class buttonCommands : MonoBehaviour
     }
 
 	public void Settings() {
-		settingsCanvas.SetActive(true);
+		settings.SetTrigger("ifPressed");
+		
+		buttonOne.SetActive(false);
+		buttonTwo.SetActive(false);
+		buttonThree.SetActive(false);
+		buttonFour.SetActive(false);
 	}
 
 	public void Exit() {
@@ -40,6 +45,7 @@ public class buttonCommands : MonoBehaviour
 	
 	public void pressMe() {
 		anime.SetTrigger("ifPressed");
+		animeFour.SetTrigger("ifPressed");
 		
 		buttonOne.SetActive(true);
 		buttonTwo.SetActive(true);
